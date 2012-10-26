@@ -1,4 +1,4 @@
-drawme
+Scribble
 ======
 
-A variation of draw something app developed on the top of javascript and canvas. Just for fun.
+Scribble is pretty much like draw something developed on the top of javascript and canvas technologies. Check this out. 
