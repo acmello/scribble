@@ -47,33 +47,12 @@ var canvas
 		},
 
 		callbackClickColorElement: function(){ 
-			$("#red").bind("click", function(e){
-				console.log(e.delegateTarget.id);	
-				if(e) { currentColor = e.delegateTarget.id };
-			});
-
-			$("#green").bind("click", function(e){
-				console.log(e.delegateTarget.id);		
-				if(e) { currentColor = e.delegateTarget.id };
-			});
-
-			$("#black").bind("click", function(e){	
-				console.log(e.delegateTarget.id);	
-				if(e) { currentColor = e.delegateTarget.id };
-			});
-
-			$("#yellow").bind("click", function(e){	
-				console.log(e.delegateTarget.id);	
-				if(e) { currentColor = e.delegateTarget.id };
-			});
-
-			$("#blue").bind("click", function(e){
-				console.log(e.delegateTarget.id);	
-				if(e) { currentColor = e.delegateTarget.id };
+			$(".color-element").bind("click", function(e){
+				if(e) { currentColor = this.id };
 			});
 		}
 	}
-		
+
 	var setup = {
 		defaultValues: function(){
 			currentColor = "#000000";
